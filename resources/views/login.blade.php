@@ -3,6 +3,7 @@
 @section('content')
 <div class="md:col-span-3 flex justify-center items-center">
     <div class="bg-white shadow-lg rounded-2xl p-8 w-full max-w-md">
+    @guest
       <h1 class="text-3xl font-bold text-center mb-6">Entrar na sua conta</h1>
 {{--
       @if ($errors->any())
@@ -14,10 +15,6 @@
             </ul>
         </div>
     @endif --}}
-
-    @if (session()->has('success'))
-        <div class="bg-green-600 text-white text-center italic p-2 rounded text-sm mb-2">{{ session()->get('success') }}</div>
-    @endif
 
      @if (session()->has('error'))
         <div class="bg-red-600 text-white text-center italic p-2 rounded text-sm mb-2">{{ session()->get('error') }}</div>
@@ -97,6 +94,9 @@
           Cadastre-se
         </a>
       </p>
+    @else
+      <div class="bg-green-600 text-white text-sm text-center p-2 rounded">Você está logado</div>
+    @endguest
     </div>
   </div>
 @endsection
