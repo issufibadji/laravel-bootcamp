@@ -37,7 +37,7 @@
     <div class="order-1 md:order-2 md:col-span-2">
       <div class="bg-white rounded-2xl shadow overflow-hidden">
         <img
-          src="{{ url('storage/images/course-image.png') }}"
+          src="{{ url('storage/images/course-image-01.png') }}"
           alt="Imagem do curso"
           class="w-full h-60 object-cover"
         >

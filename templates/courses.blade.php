@@ -4,7 +4,7 @@
     @php
       $courses = [
         ['title' => 'Laravel Completo', 'description' => 'Aprenda Laravel do zero ao avançado com projetos reais.', 'image' => asset('storage/images/course-image.png')],
-        ['title' => 'TailwindCSS na Prática', 'description' => 'Crie interfaces modernas e responsivas com Tailwind.', 'image' => 'https://images.unsplash.com/photo-1581276879432-15a19d654956'],
+        ['title' => 'TailwindCSS na Prática', 'description' => 'Crie interfaces modernas e responsivas com Tailwind.', 'image' =>  asset('storage/images/course-image-04.png')],
         ['title' => 'Livewire Masterclass', 'description' => 'Desenvolva aplicações dinâmicas sem usar JavaScript.', 'image' => 'https://images.unsplash.com/photo-1498050108023-c5249f4df085'],
       ];
     @endphp
